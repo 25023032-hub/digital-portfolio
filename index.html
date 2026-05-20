@@ -441,6 +441,29 @@ footer {
   .summary-hero, .skills-section, .challenges-section, .intro-section { padding-left: 2rem; padding-right: 2rem; }
   .project-header { padding: 2rem; }
 }
+
+/* Nút Xuất File Nổi Trên Màn Hình */
+.save-btn-floating {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  border-radius: 50px;
+  padding: 14px 28px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(200,133,74,0.4);
+  z-index: 9999;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.2s;
+}
+.save-btn-floating:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(200,133,74,0.6);
+  background: #b57238;
+}
 </style>
 </head>
 <body>
@@ -454,7 +477,6 @@ footer {
   </div>
 </nav>
  
-<!-- ==================== PAGE 1: GIỚI THIỆU ==================== -->
 <div id="page-intro" class="page active">
   <div class="intro-hero">
     <div class="intro-left">
@@ -524,7 +546,6 @@ footer {
   <footer>✏️ Nhấn vào bất kỳ văn bản nào để chỉnh sửa trực tiếp</footer>
 </div>
  
-<!-- ==================== PAGE 2: DỰ ÁN ==================== -->
 <div id="page-project" class="page">
   <div class="project-header">
     <div class="section-label">Trang Dự Án</div>
@@ -563,7 +584,6 @@ footer {
  
     <div class="project-content">
  
-      <!-- LESSON 1 -->
       <div id="lesson-1" class="lesson-panel active">
         <div class="lesson-badge">📦 Bài tập 1 — Mục 1.4</div>
         <h2 class="lesson-title" contenteditable="true" spellcheck="false">Thao tác cơ bản với tệp tin và thư mục</h2>
@@ -593,7 +613,6 @@ footer {
         </div>
       </div>
  
-      <!-- LESSON 2 -->
       <div id="lesson-2" class="lesson-panel">
         <div class="lesson-badge">🔍 Bài tập 2 — Mục 2.4</div>
         <h2 class="lesson-title" contenteditable="true" spellcheck="false">Tìm kiếm và đánh giá thông tin học thuật</h2>
@@ -633,14 +652,13 @@ footer {
         </div>
       </div>
  
-      <!-- LESSON 3 -->
       <div id="lesson-3" class="lesson-panel">
         <div class="lesson-badge">🤖 Bài tập 2 — Mục 3.4</div>
         <h2 class="lesson-title" contenteditable="true" spellcheck="false">Viết Prompt hiệu quả cho các tác vụ học tập</h2>
         <p class="lesson-subtitle" contenteditable="true" spellcheck="false">Bài 3: Tổng quan về trí tuệ nhân tạo</p>
         <div class="lesson-goal-box">
           <h4>🎯 Mục tiêu bài tập</h4>
-          <div class="lesson-goal-text" contenteditable="true" spellcheck="false">Trình bày sự so sánh giữa Prompt ban đầu và Prompt cải tiến cùng kết quả đầu ra từ AI.</div>
+          <div class="lesson-goal-text" contenteditable="true" spellcheck="false">Trình bày sự so sánh giữa Prompt ban đầu and Prompt cải tiến cùng kết quả đầu ra từ AI.</div>
         </div>
         <div class="result-area">
           <label>📝 Prompt ban đầu (chưa tối ưu)</label>
@@ -667,18 +685,17 @@ footer {
         </div>
       </div>
  
-      <!-- LESSON 4 -->
       <div id="lesson-4" class="lesson-panel">
         <div class="lesson-badge">🤝 Bài tập 3 — Mục 4.4</div>
         <h2 class="lesson-title" contenteditable="true" spellcheck="false">Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm</h2>
         <p class="lesson-subtitle" contenteditable="true" spellcheck="false">Bài 4: Giao tiếp và hợp tác trong môi trường số</p>
         <div class="lesson-goal-box">
           <h4>🎯 Mục tiêu bài tập</h4>
-          <div class="lesson-goal-text" contenteditable="true" spellcheck="false">Trình bày minh chứng về việc sử dụng công cụ quản lý dự án nhóm và cách thức phối hợp trực tuyến.</div>
+          <div class="lesson-goal-text" contenteditable="true" spellcheck="false">Trình bày minh chứng về việc sử dụng công cụ quản lý dự án nhóm and cách thức phối hợp trực tuyến.</div>
         </div>
         <div class="result-area">
           <label>📝 Công cụ đã sử dụng</label>
-          <textarea class="editable-field" placeholder="Liệt kê các công cụ hợp tác bạn đã dùng (Trello, Notion, Google Workspace, Teams...)&#10;&#10;Mô tả cách nhóm phân công và theo dõi công việc..."></textarea>
+          <textarea class="editable-field" placeholder="Liệt kê các công cụ hợp tác bạn đã dùng (Trello, Notion, Google Workspace, Teams...)&#10;&#10;Mô tả cách nhóm phân công and theo dõi công việc..."></textarea>
         </div>
         <div class="result-area">
           <label>✅ Kết quả hợp tác nhóm</label>
@@ -697,7 +714,6 @@ footer {
         </div>
       </div>
  
-      <!-- LESSON 5 -->
       <div id="lesson-5" class="lesson-panel">
         <div class="lesson-badge">🎨 Bài tập 2 — Mục 5.4</div>
         <h2 class="lesson-title" contenteditable="true" spellcheck="false">Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung</h2>
@@ -736,11 +752,10 @@ footer {
         </div>
       </div>
  
-      <!-- LESSON 6 -->
       <div id="lesson-6" class="lesson-panel">
         <div class="lesson-badge">🛡️ Bài tập 4 — Mục 6.4</div>
-        <h2 class="lesson-title" contenteditable="true" spellcheck="false">Sử dụng AI có trách nhiệm trong học tập và nghiên cứu</h2>
-        <p class="lesson-subtitle" contenteditable="true" spellcheck="false">Bài 6: An toàn và liêm chính học thuật trong môi trường số</p>
+        <h2 class="lesson-title" contenteditable="true" spellcheck="false">Sử dụng AI có trách nhiệm trong học tập and nghiên cứu</h2>
+        <p class="lesson-subtitle" contenteditable="true" spellcheck="false">Bài 6: An toàn and liêm chính học thuật trong môi trường số</p>
         <div class="lesson-goal-box">
           <h4>🎯 Mục tiêu bài tập</h4>
           <div class="lesson-goal-text" contenteditable="true" spellcheck="false">Trình bày bộ nguyên tắc cá nhân về sử dụng AI có trách nhiệm dựa trên các nghiên cứu đã học được.</div>
@@ -780,24 +795,23 @@ footer {
   <footer>✏️ Nhấn vào bất kỳ văn bản nào để chỉnh sửa — Nhấp vào ô ảnh để tải lên</footer>
 </div>
  
-<!-- ==================== PAGE 3: TỔNG KẾT ==================== -->
 <div id="page-summary" class="page">
   <div class="summary-hero">
     <div class="summary-label">Trang Tổng Kết</div>
     <h1 class="summary-title">Nhìn lại hành trình học tập</h1>
-    <p class="summary-desc">Chia sẻ những trải nghiệm, cảm nhận và bài học quý giá rút ra sau quá trình thực hiện dự án Portfolio này.</p>
+    <p class="summary-desc">Chia sẻ những trải nghiệm, cảm nhận and bài học quý giá rút ra sau quá trình thực hiện dự án Portfolio này.</p>
   </div>
  
   <div class="summary-grid">
     <div class="summary-card card-teal">
       <div class="summary-card-icon">💬</div>
       <h3>Trải nghiệm cá nhân</h3>
-      <textarea class="summary-card-textarea" placeholder="Chia sẻ trải nghiệm và cảm nhận của bạn trong suốt quá trình thực hiện Portfolio này...&#10;&#10;Điều gì khiến bạn ấn tượng nhất? Bạn cảm thấy thế nào khi hoàn thành?"></textarea>
+      <textarea class="summary-card-textarea" placeholder="Chia sẻ trải nghiệm and cảm nhận của bạn trong suốt quá trình thực hiện Portfolio này...&#10;&#10;Điều gì khiến bạn ấn tượng nhất? Bạn cảm thấy thế nào khi hoàn thành?"></textarea>
     </div>
     <div class="summary-card card-amber">
       <div class="summary-card-icon">🌟</div>
       <h3>Kiến thức & kỹ năng nổi bật</h3>
-      <textarea class="summary-card-textarea" placeholder="Những kiến thức và kỹ năng quan trọng nhất bạn đã học được qua các bài học...&#10;&#10;Kỹ năng nào bạn tự hào nhất?"></textarea>
+      <textarea class="summary-card-textarea" placeholder="Những kiến thức and kỹ năng quan trọng nhất bạn đã học được qua các bài học...&#10;&#10;Kỹ năng nào bạn tự hào nhất?"></textarea>
     </div>
     <div class="summary-card card-green">
       <div class="summary-card-icon">🏆</div>
@@ -807,7 +821,7 @@ footer {
     <div class="summary-card card-dark">
       <div class="summary-card-icon">💪</div>
       <h3>Thách thức đã vượt qua</h3>
-      <textarea class="summary-card-textarea" placeholder="Những thách thức, khó khăn bạn đã gặp phải và cách bạn vượt qua chúng..."></textarea>
+      <textarea class="summary-card-textarea" placeholder="Những thách thức, khó khăn bạn đã gặp phải and cách bạn vượt qua chúng..."></textarea>
     </div>
   </div>
  
@@ -861,7 +875,7 @@ footer {
         <div class="challenge-num">2</div>
         <h4>Mục tiêu dài hạn (6-12 tháng)</h4>
       </div>
-      <textarea class="challenge-textarea" placeholder="Định hướng nghề nghiệp, học tập và phát triển bản thân lâu dài..."></textarea>
+      <textarea class="challenge-textarea" placeholder="Định hướng nghề nghiệp, học tập and phát triển bản thân lâu dài..."></textarea>
     </div>
     <div class="challenge-card">
       <div class="challenge-header">
@@ -873,8 +887,81 @@ footer {
   </div>
   <footer>✏️ Tất cả nội dung đều có thể chỉnh sửa trực tiếp — Kéo thanh để điều chỉnh mức độ kỹ năng</footer>
 </div>
+
+<button class="save-btn-floating" onclick="exportHTML()">💾 Xuất File HTML Hoàn Thiện</button>
  
 <script>
+// Tự động khôi phục dữ liệu văn bản từ bộ nhớ đệm khi mở trang web
+window.addEventListener('DOMContentLoaded', () => {
+  loadLocalData();
+  
+  // Thiết lập cơ chế tự động theo dõi và lưu trữ văn bản mỗi khi người dùng gõ
+  document.body.addEventListener('input', (e) => {
+    if (e.target.hasAttribute('contenteditable') || e.target.tagName === 'TEXTAREA' || e.target.classList.contains('link-input') || e.target.type === 'range') {
+      saveLocalData();
+    }
+  });
+});
+
+function saveLocalData() {
+  const textData = {};
+  document.querySelectorAll('[contenteditable]').forEach((el, index) => {
+    textData['ce_' + index] = el.innerHTML;
+  });
+  document.querySelectorAll('textarea').forEach((el, index) => {
+    textData['ta_' + index] = el.value;
+  });
+  document.querySelectorAll('.link-input, .skill-card input[type="text"]').forEach((el, index) => {
+    textData['in_' + index] = el.value;
+  });
+  document.querySelectorAll('input[type="range"]').forEach((el, index) => {
+    textData['rg_' + index] = el.value;
+  });
+  localStorage.setItem('portfolio_text_cache', JSON.stringify(textData));
+}
+
+function loadLocalData() {
+  const dataStr = localStorage.getItem('portfolio_text_cache');
+  if (!dataStr) return;
+  const textData = JSON.parse(dataStr);
+  document.querySelectorAll('[contenteditable]').forEach((el, index) => {
+    if (textData['ce_' + index] !== undefined) el.innerHTML = textData['ce_' + index];
+  });
+  document.querySelectorAll('textarea').forEach((el, index) => {
+    if (textData['ta_' + index] !== undefined) el.value = textData['ta_' + index];
+  });
+  document.querySelectorAll('.link-input, .skill-card input[type="text"]').forEach((el, index) => {
+    if (textData['in_' + index] !== undefined) el.value = textData['in_' + index];
+  });
+  document.querySelectorAll('input[type="range"]').forEach((el, index) => {
+    if (textData['rg_' + index] !== undefined) {
+      el.value = textData['rg_' + index];
+      if (el.previousElementSibling && el.previousElementSibling.firstChild) {
+        el.previousElementSibling.firstChild.style.width = el.value + '%';
+      }
+    }
+  });
+}
+
+function exportHTML() {
+  // Đồng bộ toàn bộ dữ liệu hiện tại trong textarea vào DOM gốc
+  document.querySelectorAll('textarea').forEach(ta => {
+    ta.textContent = ta.value;
+  });
+  // Đồng bộ toàn bộ dữ liệu trong các thanh kéo và ô input vào DOM gốc
+  document.querySelectorAll('.link-input, .skill-card input[type="text"], input[type="range"]').forEach(input => {
+    input.setAttribute('value', input.value);
+  });
+
+  // Đóng gói toàn bộ cấu trúc trang bao gồm cả chuỗi ảnh Base64
+  const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+  const blob = new Blob([htmlContent], { type: 'text/html' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'portfolio_hoan_thien.html';
+  a.click();
+}
+
 function showPage(id, btn) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
